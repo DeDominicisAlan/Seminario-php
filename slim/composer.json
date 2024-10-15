@@ -1,0 +1,17 @@
+{
+    "require": {
+        "slim/slim": "4.*",
+        "slim/psr7": "^1.7",
+        "firebase/php-jwt": "^6.10",
+        "jimtools/jwt-auth": "^2.0"
+    },
+    "autoload":{
+        "psr-4": {
+            "Endpoints\\": "src/Endpoints/",
+            "App\\Controller\\": "src/Controller/",
+            "App\\Models\\": "src/Models/",
+            "App\\": "src/",
+            "App\\Config\\": "src/Config/"
+        }
+    }
+}
