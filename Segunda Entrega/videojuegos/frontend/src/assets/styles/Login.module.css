@@ -1,0 +1,117 @@
+/*  Login   */
+
+#login {
+  background-color: #1e0048;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/wallpaperRed.jpeg");
+  background-size: cover;
+  background-position: initial;
+  background-repeat: no-repeat;
+  }
+
+#loginContainer {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#loginBody {
+  color: rgb(255, 255, 255);
+  width: 70%;
+}
+
+#cardBody {
+  height: 100%;
+  width: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.51);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.51);
+  overflow: auto;
+  padding: 0 2% 0 2%;
+  gap: 5px;
+}
+
+.inputLogin,
+#botonLogin {
+  height: 10%;
+  width: 70%;
+  border: 1px solid;
+  border-radius: 5px;
+  margin: 2.5%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.inputLogin {
+  background-color: #ffffff00;
+  border-color: #ff0000;
+  color: white;
+  text-align: left;
+}
+
+#botonLogin {
+  background-color: #ff0000;
+  color: rgb(255, 255, 255);
+  border-color: #000000;
+  transition: 0.25s;
+}
+
+.inputLogin::placeholder {
+  color: white;
+  padding: 10px;
+}
+
+#botonLogin:hover {
+  background-color: #7b0000;
+}
+
+#cardBody h2 {
+  color: white;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+#exito, .error{
+  margin:10px;
+  color: white;
+  font-weight: 300;
+  }
+
+@media (max-width: 1366px){
+  #cardBody{
+    width: 25%;
+  }
+  
+}
+
+@media (max-width: 1228px){
+  #login{
+    background-position: center;}
+}
+
+@media (max-width: 1000px){
+
+
+  #cardBody{
+    width: 35%;
+  }
+  
+}
+
+@media (max-width: 699px){
+  #cardBody{
+    width: 50%;
+  }
+  
+}

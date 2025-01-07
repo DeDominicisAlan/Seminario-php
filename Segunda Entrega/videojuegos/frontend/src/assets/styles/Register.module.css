@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+p {
+  color: #555;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+
+
+#register {
+  background-color: #1e0048;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/thresh-highnoon.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+
+#registerContainer {
+  height: 60%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cardBody {
+  width: 30%; 
+  height: 90%; 
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.51);
+  padding: 20px; 
+  gap: 10px; 
+}
+
+#cardBody p{
+  color: white; 
+  font-weight: 300;
+}
+
+.inputReg,
+#botonReg {
+  max-height: 10%;
+  max-width: 50%;
+  border: 1px solid;
+  border-radius: 5px;
+  margin: 2.5%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.inputReg {
+  background-color: #ffffff00;
+  border-color: #ff0000;
+  color: white;
+  text-align: left;
+}
+
+#botonReg {
+  background-color: #ff0000;
+  color: rgb(255, 255, 255);
+  border-color: #000000;
+  transition: 0.25s;
+}
+
+.inputReg::placeholder {
+  color: white;
+  padding: 10px;
+}
+
+#botonReg:hover {
+  background-color: #7b0000;
+}
+
+#cardBody h2 {
+  color: white;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+#exito, #error{
+  margin:10px;
+  color: white;
+  font-weight: 300;
+  }
+  
+  @media (max-width: 1366px){
+    #cardBody{
+      width: 35%;
+    }
+    
+    #botonReg{
+      max-height: 15%;
+    }
+    
+  }
+  
+  @media (max-width: 1000px){
+  
+  
+    #cardBody{
+      width: 50%;
+    }
+    
+  }
+  
+  @media (max-width: 699px){
+    #cardBody{
+      width: 80%;
+    }
+    
+  }

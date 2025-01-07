@@ -1,0 +1,143 @@
+#contenedor {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #181818;
+  flex-direction: column;
+  overflow: auto;
+}
+.h2Respuesta{
+  font-weight: 500;
+  margin: 5px;
+}
+
+#contenedor * {
+  font-weight: 400;
+}
+
+#formularioContainer {
+  padding: 30px;
+  max-width: 400px; 
+  margin: 0 auto;
+  background-color: #2d2d2d; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+}
+
+.campo {
+  margin: 0 0 5px 0;
+  font-weight: bold;
+  color: white; 
+  font-size: 14px; 
+}
+
+.input, #textarea, #select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #444; 
+  color: white; 
+  font-size: 14px;
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+.input::placeholder, #textarea::placeholder {
+  color: #aaa; 
+}
+
+#textarea {
+  resize: none; 
+  height: 80px; 
+}
+
+#submitButton {
+  padding: 10px; 
+  border: none;
+  border-radius: 5px;
+  background-color: #d32f2f; 
+  color: white; 
+  cursor: pointer;
+  font-size: 14px; 
+}
+
+#submitButton:hover {
+  background-color: #c62828; 
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px; 
+  padding: 8px; 
+  background-color: #3a3a3a;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.checkboxContainer:hover {
+  background-color: #4a4a4a;
+}
+
+.campo {
+  font-weight: bold;
+  color: white;
+  margin-bottom: 4px; 
+}
+
+.input[type="checkbox"] {
+  margin-right: 8px; 
+  width: 16px; 
+  height: 16px;
+  cursor: pointer;
+  accent-color: #d32f2f; 
+}
+
+label {
+  color: #f0f0f0;
+  font-size: 14px; 
+  cursor: pointer;
+  user-select: none;
+}
+
+label:hover {
+  color: #e0e0e0;
+}
+
+#formularioContainer::-webkit-scrollbar{
+  width: 10px;
+}
+
+#formularioContainer::-webkit-scrollbar-thumb  {
+  background-color: #ff0000; 
+  
+}
+
+#formularioContainer::-webkit-scrollbar-track {
+  background-color: #2d2d2d; 
+}
+
+@media (max-height: 805px){
+
+  #formularioContainer{
+    overflow: auto;
+    height: 90%;
+    
+  }
+  
+  #contenedor{
+    height: 100%;
+  }
+  
+  .input{
+    padding: 5px;
+  }
+  
+}

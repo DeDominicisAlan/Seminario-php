@@ -1,0 +1,84 @@
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1a1a1a;
+  padding: 0 20px;
+  height: 5vh;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid rgb(255, 0, 0);
+}
+
+#navbarLista {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+#navbarLista li {
+  margin: 0 15px;
+  text-align: center;
+}
+
+#navbarLista a, #cerrarSesion {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+  
+}
+
+
+#cerrarSesion{
+  margin: 0;
+  padding: 0;
+}
+
+#menuButton {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#navbar a:hover, #cerrarSesion:hover {
+  cursor: pointer;
+  color: rgb(255, 0, 0); 
+}
+
+@media (max-width: 765px) {
+  
+  #menuButton {
+    display: block;
+  }
+
+  #navbarLista {
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    top: 4.6vh; 
+    right: 0;
+    background-color: #1a1a1a;
+    width: 100%;
+    text-align: center;
+    border-bottom: 3px solid rgb(255, 0, 0);
+    z-index: 2; /* Con z-index 1 se me sobrepone el hoverlay de los juegos */
+  }
+
+  #navbarLista.show {
+    display: flex;
+  }
+
+  #navbarLista li {
+    padding: 5px;
+    font-size: 1.2em;
+    margin: 2.5px 0 ;
+  }
+  
+}
